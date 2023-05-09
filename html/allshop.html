@@ -1,0 +1,1273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>template2</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin&family=Patrick+Hand&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <style>
+        
+        body{
+            font-family: Cabin;
+        }
+        hr{
+            width: 80%;
+            height: 1.5px;
+            border: none;
+            background-color:#0C2323;
+            margin-top: 30px;
+            margin-bottom: 30px
+        }
+        a{
+            text-decoration: none;
+        }
+        .typed-cursor{
+            display: none;
+        }
+
+
+   /*--------------------------------------------------------mobile----------------------------------------------*/
+    /*------------------------------------------------------------------------------------------------------*/
+    @media only screen and (max-width: 600px) { 
+        .divbar{
+            width: 100%;
+            background-color:#000000;
+            position: fixed;
+            top: 0px;
+        }  
+        .nav{
+            display: inline-block;
+            font-size: 32px;
+            margin-left: 3% ;
+            vertical-align: bottom;
+            background: none;
+            border: none;
+            color: aliceblue;
+            
+        }
+        .nav1{
+            display: inline-block;
+            background: none;
+            color: aliceblue;
+            height: 40px;
+            font-size: 15px;
+            border: none;
+            
+        }
+        .nav:hover,.nav1:hover,.input:hover{
+            cursor: pointer;
+            color:  #6DCD9A;
+        }
+        .logo1{
+            width: 40%;
+            display: block ;
+        }
+        .divmob{
+            display: none;
+        }
+        .input{
+            font-size: 20px;
+            height: 25px;
+            width: 25%;
+            vertical-align: middle;
+            border-radius: 20px;
+            margin-left: 13%;
+            color:  #6DCD9A;
+            border: solid aliceblue;
+        }
+        .maindiv1{
+            width: 100%;
+            background-color: white;   
+        }
+        .divimg1{
+            background: url(https://w7.pngwing.com/pngs/454/1021/png-transparent-consumer-electronics-gadget-advanced-electronics-electronic-component-others-electronics-laptop-electronic-device-thumbnail.png);
+            background-repeat: non;
+            background-size:cover ;
+            width: 100%;
+            background-position: center;
+            border-radius: 5px;
+            height: 500px;
+            display: inline-block;
+            vertical-align: middle;
+            margin-top: 5%;
+
+
+        }
+        .divp1{
+            display: inline-block;
+            margin-left: 1%;
+        }
+        .p1{
+            font-size: 30px;
+            font-family: Cabin;
+            color: #0C2323;
+            display: block;
+            margin-left: 10%;
+
+        }
+        .span1{
+            font-size: 25px;
+            font-family: 'Patrik Hand';
+            color: #0C2323;
+            display: block;
+            text-align: center;
+            width: 60%;
+            margin-left: 18%;
+
+        }
+        .maindiv2{
+            display: block;
+            width: 100%;
+            
+        }
+        .divimg2{
+            background-repeat: non;
+            background-size:cover ;
+            width: 100%;
+            background-position: center;
+            height: 400px;
+            display: inline-block;
+            vertical-align: bottom;
+        }
+        .divimg2:hover .divhover{
+            display: inline-block;
+        }
+        .main{
+            border: solid #0C2323; 
+            display: block;
+            width: 90%;
+            margin-left: 5%;
+            margin-top: 5%;
+        }
+        .p2{
+            font-size: 30px;
+            font-family: Cabin;
+            color: #0C2323;
+            display: block;
+            text-align: center;
+        }
+        .span2{
+            font-size: 20px;
+            font-family: 'Patrik Hand';
+            color:darkgreen;
+            display: block;
+            text-align: center;
+        }
+        .divhover{
+            display: none;
+            width: 95%;
+            border-radius: 25px;
+            height: 110px;
+            margin-left: 2%;
+            margin-top: 80%;    
+            background-color:#6DCD9A ;  
+            animation-name: poppy;
+            animation-duration: 1s;
+        }
+        @keyframes poppy {
+            0%{
+                height: 0px;
+            }
+            100%{
+                height: 125px;
+            }
+        }
+        
+        .divphov{
+            width: 80%;
+            margin-top: 70%;
+
+        }
+        
+        .pdisc{
+            width: 80%;
+            font-size: 20px;
+            color:#000000;
+            font-family: Cabin;
+        }
+        .add{
+            width: 60%;
+            font-size: 20px;
+            color: #DCD3D1;
+            background-color:#2F2723;
+            height: 50px;
+            border-radius: 15px;
+            border-style:none;
+            font-family: Cabin;
+            display: none;
+
+        }
+        .add2{
+            display: inline;
+        }
+    }
+    /*------------------------------------------------Ipad----------------------------------------------------------------*/
+    /*------------------------------------------------------------------------------------------------------*/
+    @media only screen and (min-width :600px) {
+        .divbar{
+            width: 100%;
+            background-color:#000000;
+            position: fixed;
+            top: 0px;
+        }  
+        .nav{
+            display: inline-block;
+            font-size: 32px;
+            margin-left: 13% ;
+            vertical-align: bottom;
+            background: none;
+            border: none;
+            color: aliceblue;
+            
+        }
+        .nav1{
+            display: inline-block;
+            background: none;
+            color: aliceblue;
+            height: 40px;
+            font-size: 15px;
+            border: none;
+            
+        }
+        .nav:hover,.nav1:hover,.input:hover{
+            cursor: pointer;
+            color:  #6DCD9A;
+        }
+        .logo1{
+            width: 40%;
+            display: block ;
+        }
+        .divmob{
+            display: none;
+        }
+        .input{
+            font-size: 20px;
+            height: 25px;
+            width: 20%;
+            vertical-align: middle;
+            border-radius: 20px;
+            margin-left: 20%;
+            color:  #6DCD9A;
+            border: solid aliceblue;
+        }
+        .maindiv1{
+            width: 100%;
+            background-color: white;   
+        }
+        .divimg1{
+            background: url(https://w7.pngwing.com/pngs/454/1021/png-transparent-consumer-electronics-gadget-advanced-electronics-electronic-component-others-electronics-laptop-electronic-device-thumbnail.png);
+            background-repeat: no-repeat;
+            background-size:cover ;
+            width: 47%;
+            background-position: center;
+            border-radius: 5px;
+            height: 500px;
+            margin-left: 10%;
+            display: inline-block;
+            vertical-align: middle;
+            margin-top: 5%;
+
+
+        }
+        .divp1{
+            display: inline-block;
+            width:38%;
+            margin-left: 1%;
+            margin-top: 30px;
+        
+        }
+        .p1{
+            font-size: 30px;
+            font-family: Cabin;
+            color: #0C2323;
+            display: block;
+            margin-left: 18%;
+        
+
+        }
+        .span1{
+            font-size: 25px;
+            font-family: 'Patrik Hand';
+            color: #0C2323;
+            display: block;
+            text-align: center;
+            width: 60%;
+            margin-left: 18%;
+
+        }
+        .maindiv2{
+            display: inline-block;
+            width: 100%;
+        }
+        .divimg2{
+            background-repeat: non;
+            background-size:cover ;
+            width: 100%;
+            background-position: center;
+            height: 400px;
+            display: inline-block;
+            vertical-align: bottom;
+        }
+        .divimg2:hover .divhover{
+            display: inline-block;
+        }
+        .main{
+            border: solid #0C2323; 
+            display: inline-block;
+            width: 40%;
+            margin-left: 5%;   
+            margin-top: 50px;
+        }
+        .p2{
+            font-size: 30px;
+            font-family: Cabin;
+            color: #0C2323;
+            display: block;
+            text-align: center;
+        }
+        .span2{
+            font-size: 25px;
+            font-family: 'Patrik Hand';
+            color:darkgreen;
+            display: block;
+            text-align: center;
+        }
+        .divhover{
+            display: none;
+            width: 95%;
+            border-radius: 25px;
+            height: 125px;
+            margin-left: 2.5%;
+            margin-top: 90%;    
+            background-color:#6DCD9A ;  
+            animation-name: poppy;
+            animation-duration: 1s;
+        }
+        @keyframes poppy {
+            0%{
+                height: 0px;
+            }
+            100%{
+                height: 125px;
+            }
+        }
+        
+        .divphov{
+            width: 80%;
+            margin-top: 70%;
+
+        }
+        
+        .pdisc{
+            width: 80%;
+            font-size: 18px;
+            color:#000000;
+            font-family: Cabin;
+        }
+        .add{
+            width: 60%;
+            font-size: 18px;
+            color: #DCD3D1;
+            background-color:#2F2723;
+            height: 40px;
+            border-radius: 15px;
+            border-style:none;
+            font-family: Cabin;
+            display: none;
+        }
+        .add2{
+            display: inline;
+        }
+
+    } 
+    
+   /*-------------------------------------------------------laptop--------------------------------------------*/
+    /*------------------------------------------------------------------------------------------------------*/  
+    @media only screen and (min-width: 900px){
+        .divbar{
+            width: 100%;
+            background-color:#000000;
+            position: fixed;
+            top: 0px;
+        }  
+        .nav{
+            display: inline-block;
+            font-size: 32px;
+            margin-left: 13% ;
+            vertical-align: bottom;
+            background: none;
+            border: none;
+            color: aliceblue;
+            
+        }
+        .nav1{
+            display: inline-block;
+            background: none;
+            color: aliceblue;
+            height: 40px;
+            font-size: 15px;
+            border: none;
+            
+        }
+        .nav:hover,.nav1:hover,.input:hover{
+            cursor: pointer;
+            color:  #6DCD9A;
+        }
+        .logo1{
+            width: 40%;
+            display: block ;
+        }
+        .divmob{
+            display: none;
+        }
+        .input{
+            font-size: 20px;
+            height: 25px;
+            width: 20%;
+            vertical-align: middle;
+            border-radius: 20px;
+            margin-left: 20%;
+            color:  #6DCD9A;
+            border: solid aliceblue;
+        }
+        .maindiv1{
+            width: 100%;
+            background-color: white;   
+        }
+        .divimg1{
+            background: url(https://w7.pngwing.com/pngs/454/1021/png-transparent-consumer-electronics-gadget-advanced-electronics-electronic-component-others-electronics-laptop-electronic-device-thumbnail.png);
+            background-repeat: no-repeat;
+            background-size:cover ;
+            width: 50%;
+            background-position: center;
+            border-radius: 5px;
+            height: 500px;
+            margin-left: 10%;
+            display: inline-block;
+            vertical-align: middle;
+            margin-top: 5%;
+
+
+        }
+        .divp1{
+            display: inline-block;
+            width:30%;
+            margin-left: 1%;
+        }
+        .p1{
+            font-size: 40px;
+            font-family: Cabin;
+            color: #0C2323;
+            display: block;
+            margin-left: 18%;
+
+        }
+        .span1{
+            font-size: 25px;
+            font-family: 'Patrik Hand';
+            color: #0C2323;
+            display: block;
+            text-align: center;
+            width: 60%;
+            margin-left: 18%;
+
+        }
+        .maindiv2{
+            display: inline-block;
+            width: 100%;
+        }
+        .divimg2{
+            background-repeat: non;
+            background-size:cover ;
+            width: 100%;
+            background-position: center;
+            height: 400px;
+            display: inline-block;
+            vertical-align: bottom;
+        }
+        .divimg2:hover .divhover{
+            display: inline-block;
+        }
+        .main{
+            border: solid #0C2323; 
+            display: inline-block;
+            width: 18%;
+            margin-left: 5%;   
+            margin-top: 50px;
+        }
+        .p2{
+            font-size: 30px;
+            font-family: Cabin;
+            color: #0C2323;
+            display: block;
+            text-align: center;
+        }
+        .span2{
+            font-size: 25px;
+            font-family: 'Patrik Hand';
+            color:darkgreen;
+            display: block;
+            text-align: center;
+        }
+        .divhover{
+            display: none;
+            width: 95%;
+            border-radius: 25px;
+            height: 125px;
+            margin-left: 2.5%;
+            margin-top: 90%;    
+            background-color:#6DCD9A ;  
+            animation-name: poppy;
+            animation-duration: 1s;
+        }
+        @keyframes poppy {
+            0%{
+                height: 0px;
+            }
+            100%{
+                height: 125px;
+            }
+        }
+        
+        .divphov{
+            width: 80%;
+            margin-top: 70%;
+
+        }
+        
+        .pdisc{
+            width: 80%;
+            font-size: 18px;
+            color:#000000;
+            font-family: Cabin;
+        }
+        .add{
+            width: 60%;
+            font-size: 18px;
+            color: #DCD3D1;
+            background-color:#2F2723;
+            height: 40px;
+            border-radius: 15px;
+            border-style:none;
+            font-family: Cabin;
+            display: inline;
+        }
+        .add2{
+            display: none;
+        }
+        
+    }
+
+    </style>
+</head>
+<body>
+    <body>
+        
+        <!------------------------------------------------------------------------------------------------------------------------------------>
+        <div style="position: sticky; top: 0px; background-color: white;" class="divmob">
+            <img class="logo" src="https://assets.stickpng.com/images/580b57fcd9996e24bc43c51f.png" alt="" >
+            <button style="margin-left: 50%; font-size: 30px; border: none; background: none;"  id="butnav">=</button>
+        </div>
+            <div id="nav"  class="divbar">
+            <button id="nav1" class="nav">=</button>
+            <input id="input" style="background-color: #000000;" class="input"  type="text">
+            <button id="butt" class="nav1"><i class="fa fa-search"></i></button>
+            <a href="/"><button class="nav" ><i class="fa fa-home"></i></button></a> 
+            <button class="nav" onclick="cart1()"><i class="fa fa-cart-arrow-down"></i></button>
+        </div>
+        <!------------------------------------------------------------------------------------------------------------------------------------>
+        <div class="maindiv1">
+            <div class="divimg1"></div>
+            
+            <div class="divp1"> 
+            <p class="p1">All Equipment</p>
+            
+            <span class="span1">All your desktop , laptop , mobile or accessories needs made available</span>
+            </div>
+        </div>
+     <!------------------------------------------------------------------------------------------------------------------------------------>
+    <hr>
+    {% for prod in products %}
+    <!--products-->
+
+        <!--when hovering a description and a button add to cart appear-->
+        <div class='main'>
+            <div class="maindiv2">
+                <div class="divimg2" style='background-image:url( {{prod.0}} ) ;'>
+                    <div class="divhover">
+                        <center>
+                            <p class="pdisc">{{prod.2}}</p>
+                            <button class="add" onclick="add('{{prod.1}}',{{prod.3}})">Add to Cart <i class="fa fa-cart-plus"></i></button>
+                        </center>
+                    </div>
+                </div>
+            </div>
+            <!--title-->
+            <span class="p2">{{prod.1}}</span>
+            <!--price-->
+            <span class="span2">{{prod.3}}$</span>
+            <center> <button class="add add2" onclick="add('{{prod.1}}',{{prod.3}})">Add to Cart <i class="fa fa-cart-plus"></i></button> </center>
+        </div>    
+
+    {% endfor %}
+
+    <!------------------------------------------------------------------------------------------------------------------------------------>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        // title  = ['mobile','laptop']
+        // price = [100,200]
+        // i = mobile , j = 0 | price[j] = 100 | pr = 100 , i = mobile
+        let width1 = window.innerWidth
+  //------------------------------------------------------------------Laptop-------------------------------------------------------------//      
+        if(width1>=900){
+    console.log(width1);
+        let title = []
+        let price = []
+
+        function cart1() {
+            let cart = document.getElementById('cart')
+            if ( cart == null ) {
+                cart = document.createElement('div');
+                console.log(100);
+            }
+            else{
+                document.body.removeChild(cart)
+                cart = document.createElement('div');
+            }
+            
+    
+        
+            cart.id  = 'cart'
+            cart.style.backgroundColor = ' #6DCD9A';
+	        cart.style.width = '15%';
+	        cart.style.position = 'fixed';
+	        cart.style.top = '40px';
+            cart.style.right = '0%'
+	        let wid = 0
+            let mar = setInterval(function() {
+                if (wid >= 0.01*width1) {
+                    clearInterval(mar)
+                }
+                else{
+                    wid = wid + 1
+                    cart.style.right = wid + 'px'
+                }
+            }, 3);
+            document.body.appendChild(cart)
+
+            let remove = document.createElement('button');
+            remove.innerText = 'x'
+            remove.style.fontSize = '28px'
+            remove.style.fontFamily = 'Cabin'
+            remove.style.color = '#0C2323'
+            remove.style.display = 'block'
+            remove.style.backgroundColor = 'white'
+            remove.style.marginLeft = '89%'
+            remove.style.borderColor = 'white'
+            remove.style.boxShadow = '5px'
+
+            remove.onclick = function () {
+                let mar =  setInterval(function() {
+                        if (wid == 0) {
+                            clearInterval(mar);
+                            document.body.removeChild(cart);          
+                        }
+                        else{
+                            wid = wid - 1
+                            cart.style.width = wid +'px'
+                        }        
+                    }, 1);   
+            }
+            
+            cart.appendChild(remove);
+
+           
+                
+            
+
+            title.forEach((i,j) => {
+                let pr = price[j]
+                let p = document.createElement('p')
+                p.innerText = i 
+                p.style.fontSize = '20px'
+                p.style.fontFamily = 'Cabin'
+                p.style.color = '#0C2323'
+                p.style.marginLeft = '7%'
+                p.style.display = 'inline'
+                let hr = document.createElement('hr')
+                hr.style.width = '80%'
+                hr.style.marginTop='5px'
+                hr.style.marginBottom = '5px'
+
+                let p1 = document.createElement('p')
+                p1.innerText = pr + '$'
+                
+                p1.style.fontSize = '20px'
+                p1.style.fontFamily = 'Cabin'
+                p1.style.color = '#0C2323'
+                p1.style.marginLeft = '5%'
+                p1.style.display = 'inline-block'
+                cart.appendChild(p)
+                cart.appendChild(p1) 
+                
+                
+                let x = document.createElement('button')
+                x.innerText = 'X'
+                
+                x.style.fontSize = '10px'
+                x.style.fontFamily = 'Cabin'
+                x.style.color = '#0C2323'
+                x.style.display = 'inline-block'
+                x.style.backgroundColor = 'white'
+                x.style.marginLeft = '7%'
+                x.style.borderColor = 'white'
+                x.onclick = function () {
+                        title.pop(i)
+                        price.pop(pr)
+                        cart.removeChild(p)
+                        cart.removeChild(p1)
+                         cart.removeChild(x)
+                    cart1()
+                }
+                cart.appendChild(x)
+                cart.appendChild(hr)
+            });
+
+            let sum = 0
+            price.forEach(i => {
+                sum = sum + i
+            });
+            let psum = document.createElement('p')
+            
+            psum.style.fontSize = '25px'
+            psum.style.fontFamily = 'Cabin'
+            psum.style.color = '#0C2323'
+            psum.style.marginLeft = '15%'
+            psum.style.textAlign = 'center'
+            psum.style.display = 'inline-block'
+            psum.innerText = 'Total: ' + sum + '$'
+            cart.appendChild(psum)
+
+        }
+        function add(title1,price1) {
+            title.push(title1)
+            price.push(price1)    
+            cart1()
+        }
+        
+        let wid = 0
+        let nav1 = document.getElementById('nav1')
+    nav1.onclick = function sec(){
+        let divna = document.createElement('div')
+        divna.style.position = 'fixed'
+        divna.style.backgroundColor = 'black'
+        divna.style.width = '0'
+        divna.style.top = '40px'
+
+        let mar = setInterval(() => {
+            if(wid>=0.15*width1){
+                clearInterval(mar)
+            }
+            else{
+                wid +=1
+                divna.style.width =  wid + 'px'    
+            }  
+        },1);     
+        document.body.appendChild(divna);
+        let text = ['Laptop','Mobile','Accessories'];
+        text.forEach(i => {
+            let page = document.createElement('a')
+            if(i == 'Laptop'){page.href = '/laptop'}
+            if(i == 'Mobile'){page.href = '/mobile'}
+            if(i == 'Accessories'){page.href = '/acc'}
+
+            page.innerText = i
+            page.style.color = 'white'
+            page.style.fontSize = '25px'
+            page.style.display = 'block'
+            page.style.marginTop = '30px'
+            page.style.marginLeft = '20px'
+            page.style.fontFamily = 'Cabin' 
+            divna.appendChild(page) 
+        });
+        nav1.innerText = 'x'
+        nav1.onclick = function(){
+
+          let mar1 = setInterval(() => {
+                if(wid<=0){
+                     clearInterval(mar1)
+                     document.body.removeChild(divna)
+                    
+            }
+                else{
+                    wid = wid - 1
+                    divna.style.width = wid+'px'
+                    
+                }
+          }, 1);
+            
+            nav1.innerText = '='
+            nav1.onclick=function(){
+                sec()
+            }
+              
+        }
+        
+
+    } 
+
+    }
+    
+ //------------------------------------------------------------------------Ipad--------------------------------------------------------------------------------------------
+    if(width1>600 && width1 < 900){
+        let title = []
+        let price = []
+
+        function cart1() {
+            let cart = document.getElementById('cart')
+            if ( cart == null ) {
+                cart = document.createElement('div');
+                console.log(100);
+            }
+            else{
+                document.body.removeChild(cart)
+                cart = document.createElement('div');
+            }
+            
+    
+        
+            cart.id  = 'cart'
+            cart.style.backgroundColor = ' #6DCD9A';
+	        cart.style.width = '30%';
+	        cart.style.position = 'fixed';
+	        cart.style.top = '40px';
+            cart.style.right = '0%'
+	        let wid = 0
+            let mar = setInterval(function() {
+                if (wid >= 0.01*width1) {
+                    clearInterval(mar)
+                }
+                else{
+                    wid = wid + 1
+                    cart.style.right = wid + 'px'
+                }
+            }, 3);
+            document.body.appendChild(cart)
+
+            let remove = document.createElement('button');
+            remove.innerText = 'x'
+            remove.style.fontSize = '28px'
+            remove.style.fontFamily = 'Cabin'
+            remove.style.color = '#0C2323'
+            remove.style.display = 'block'
+            remove.style.backgroundColor = 'white'
+            remove.style.marginLeft = '89%'
+            remove.style.borderColor = 'white'
+            remove.style.boxShadow = '5px'
+
+            remove.onclick = function () {
+                let mar =  setInterval(function() {
+                        if (wid == 0) {
+                            clearInterval(mar);
+                            document.body.removeChild(cart);          
+                        }
+                        else{
+                            wid = wid - 1
+                            cart.style.width = wid +'px'
+                        }        
+                    }, 1);   
+            }
+            
+            cart.appendChild(remove);
+
+           
+                
+            
+
+            title.forEach((i,j) => {
+                let pr = price[j]
+                let p = document.createElement('p')
+                p.innerText = i 
+                p.style.fontSize = '20px'
+                p.style.fontFamily = 'Cabin'
+                p.style.color = '#0C2323'
+                p.style.marginLeft = '7%'
+                p.style.display = 'inline'
+                let hr = document.createElement('hr')
+                hr.style.width = '80%'
+                hr.style.marginTop='5px'
+                hr.style.marginBottom = '5px'
+
+                let p1 = document.createElement('p')
+                p1.innerText = pr + '$'
+                
+                p1.style.fontSize = '20px'
+                p1.style.fontFamily = 'Cabin'
+                p1.style.color = '#0C2323'
+                p1.style.marginLeft = '5%'
+                p1.style.display = 'inline-block'
+                cart.appendChild(p)
+                cart.appendChild(p1) 
+                
+                
+                let x = document.createElement('button')
+                x.innerText = 'X'
+                
+                x.style.fontSize = '13px'
+                x.style.fontFamily = 'Cabin'
+                x.style.color = '#0C2323'
+                x.style.display = 'inline-block'
+                x.style.backgroundColor = 'white'
+                x.style.marginLeft = '7%'
+                x.style.borderColor = 'white'
+                x.onclick = function () {
+                        title.pop(i)
+                        price.pop(pr)
+                        cart.removeChild(p)
+                        cart.removeChild(p1)
+                         cart.removeChild(x)
+                    cart1()
+                }
+                cart.appendChild(x)
+                cart.appendChild(hr)
+            });
+
+            let sum = 0
+            price.forEach(i => {
+                sum = sum + i
+            });
+            let psum = document.createElement('p')
+            
+            psum.style.fontSize = '25px'
+            psum.style.fontFamily = 'Cabin'
+            psum.style.color = '#0C2323'
+            psum.style.marginLeft = '15%'
+            psum.style.textAlign = 'center'
+            psum.style.display = 'inline-block'
+            psum.innerText = 'Total: ' + sum + '$'
+            cart.appendChild(psum)
+
+        }
+        function add(title1,price1) {
+            title.push(title1)
+            price.push(price1)    
+            cart1()
+        }
+
+        let wid = 0
+        let nav1 = document.getElementById('nav1')
+    nav1.onclick = function sec(){
+        let divna = document.createElement('div')
+        divna.style.position = 'fixed'
+        divna.style.backgroundColor = 'black'
+        divna.style.width = '0'
+        divna.style.top = '40px'
+
+        let mar = setInterval(() => {
+            if(wid>=0.3*width1){
+                clearInterval(mar)
+            }
+            else{
+                wid +=1
+                divna.style.width =  wid + 'px'    
+            }  
+        },1);     
+        document.body.appendChild(divna);
+        let text = ['Laptop','Mobile','Accessories'];
+        text.forEach(i => {
+            let page = document.createElement('a')
+            
+            if(i == 'Mobile'){page.href = '/mobile'}
+            if(i == 'Accessories'){page.href = '/acc'}
+            if(i == 'Laptop'){page.href = '/laptop'}
+            page.innerText = i
+            page.style.color = 'white'
+            page.style.fontSize = '25px'
+            page.style.display = 'block'
+            page.style.marginTop = '30px'
+            page.style.marginLeft = '30px'
+            page.style.fontFamily = 'Cabin' 
+            divna.appendChild(page) 
+        });
+        nav1.innerText = 'x'
+        nav1.onclick = function(){
+
+          let mar1 = setInterval(() => {
+                if(wid<=0){
+                     clearInterval(mar1)
+                     document.body.removeChild(divna)
+                    
+            }
+                else{
+                    wid = wid - 1
+                    divna.style.width = wid+'px'
+                    
+                }
+          }, 1);
+            
+            nav1.innerText = '='
+            nav1.onclick=function(){
+                sec()
+            }
+              
+        }
+        
+
+    } 
+    }
+    //-----------------------------------------------------------------Mobile--------------------------------------------------------------------------------------------------
+    if(width1<600){ 
+        let title = []
+        let price = []
+
+        function cart1() {
+            let cart = document.getElementById('cart')
+            if ( cart == null ) {
+                cart = document.createElement('div');
+                console.log(100);
+            }
+            else{
+                document.body.removeChild(cart)
+                cart = document.createElement('div');
+            }
+            
+    
+        
+            cart.id  = 'cart'
+            cart.style.backgroundColor = ' #6DCD9A';
+	        cart.style.width = '50%';
+	        cart.style.position = 'fixed';
+	        cart.style.top = '40px';
+            cart.style.right = '0%'
+	        let wid = 0
+            let mar = setInterval(function() {
+                if (wid >= 0.01*width1) {
+                    clearInterval(mar)
+                }
+                else{
+                    wid = wid + 1
+                    cart.style.right = wid + 'px'
+                }
+            }, 3);
+            document.body.appendChild(cart)
+
+            let remove = document.createElement('button');
+            remove.innerText = 'x'
+            remove.style.fontSize = '28px'
+            remove.style.fontFamily = 'Cabin'
+            remove.style.color = '#0C2323'
+            remove.style.display = 'block'
+            remove.style.backgroundColor = 'white'
+            remove.style.marginLeft = '89%'
+            remove.style.borderColor = 'white'
+            remove.style.boxShadow = '5px'
+
+            remove.onclick = function () {
+                let mar =  setInterval(function() {
+                        if (wid == 0) {
+                            clearInterval(mar);
+                            document.body.removeChild(cart);          
+                        }
+                        else{
+                            wid = wid - 1
+                            cart.style.width = wid +'px'
+                        }        
+                    }, 1);   
+            }
+            
+            cart.appendChild(remove);
+
+           
+                
+            
+
+            title.forEach((i,j) => {
+                let pr = price[j]
+                let p = document.createElement('p')
+                p.innerText = i 
+                p.style.fontSize = '20px'
+                p.style.fontFamily = 'Cabin'
+                p.style.color = '#0C2323'
+                p.style.marginLeft = '7%'
+                p.style.display = 'inline'
+                let hr = document.createElement('hr')
+                hr.style.width = '80%'
+                hr.style.marginTop='5px'
+                hr.style.marginBottom = '5px'
+
+                let p1 = document.createElement('p')
+                p1.innerText = pr + '$'
+                
+                p1.style.fontSize = '20px'
+                p1.style.fontFamily = 'Cabin'
+                p1.style.color = '#0C2323'
+                p1.style.marginLeft = '5%'
+                p1.style.display = 'inline-block'
+                cart.appendChild(p)
+                cart.appendChild(p1) 
+                
+                
+                let x = document.createElement('button')
+                x.innerText = 'X'
+                
+                x.style.fontSize = '13px'
+                x.style.fontFamily = 'Cabin'
+                x.style.color = '#0C2323'
+                x.style.display = 'inline-block'
+                x.style.backgroundColor = 'white'
+                x.style.marginLeft = '7%'
+                x.style.borderColor = 'white'
+                x.onclick = function () {
+                        title.pop(i)
+                        price.pop(pr)
+                        cart.removeChild(p)
+                        cart.removeChild(p1)
+                         cart.removeChild(x)
+                    cart1()
+                }
+                cart.appendChild(x)
+                cart.appendChild(hr)
+            });
+
+            let sum = 0
+            price.forEach(i => {
+                sum = sum + i
+            });
+            let psum = document.createElement('p')
+            
+            psum.style.fontSize = '25px'
+            psum.style.fontFamily = 'Cabin'
+            psum.style.color = '#0C2323'
+            psum.style.marginLeft = '15%'
+            psum.style.textAlign = 'center'
+            psum.style.display = 'inline-block'
+            psum.innerText = 'Total: ' + sum + '$'
+            cart.appendChild(psum)
+
+        }
+        function add(title1,price1) {
+            title.push(title1)
+            price.push(price1)    
+            cart1()
+        }
+
+        let wid = 0
+        let nav1 = document.getElementById('nav1')
+    nav1.onclick = function sec(){
+        let divna = document.createElement('div')
+        divna.style.position = 'fixed'
+        divna.style.backgroundColor = 'black'
+        divna.style.width = '0'
+        divna.style.top = '40px'
+
+        let mar = setInterval(() => {
+            if(wid>=0.5*width1){
+                clearInterval(mar)
+            }
+            else{
+                wid +=1
+                divna.style.width =  wid + 'px'    
+            }  
+        },1);     
+        document.body.appendChild(divna);
+        let text = ['Laptop','Mobile','Accessories'];
+        text.forEach(i => {
+            let page = document.createElement('a')
+            
+            if(i == 'Mobile'){page.href = '/mobile'}
+            if(i == 'Accessories'){page.href = '/acc'}
+            if(i == 'Laptop'){page.href = '/laptop'}
+            page.innerText = i
+            page.style.color = 'white'
+            page.style.fontSize = '25px'
+            page.style.display = 'block'
+            page.style.marginTop = '30px'
+            page.style.marginLeft = '10px'
+            page.style.fontFamily = 'Cabin' 
+            divna.appendChild(page) 
+        });
+        nav1.innerText = 'x'
+        nav1.onclick = function(){
+
+          let mar1 = setInterval(() => {
+                if(wid<=0){
+                     clearInterval(mar1)
+                     document.body.removeChild(divna)
+                    
+            }
+                else{
+                    wid = wid - 1
+                    divna.style.width = wid+'px'
+                    
+                }
+          }, 1);
+            
+            nav1.innerText = '='
+            nav1.onclick=function(){
+                sec()
+            }
+              
+        }
+        
+
+    } 
+
+ } 
+        
+
+
+
+ let butt =document.getElementById('butt');
+ butt.onclick = function(){
+     let search = document.getElementById('input').value
+     let products = document.getElementsByClassName('p2')
+     for(let i = 0;i<products.length;i++){  
+         products[i].style.fontWeight = 'normal'
+         if( products[i].innerText.toLowerCase().includes(search.toLowerCase()) ){
+             products[i].style.fontWeight = 'bold'
+         }
+     }
+}
+
+                
+                
+
+    
+    </script>
+    
+</body>
+</html>
